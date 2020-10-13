@@ -101,6 +101,14 @@ color: #18384C;
     border-radius:50px;
     margin-bottom: 30px;
 }
+.col-md-7.tab-line li{
+    display: inline-flex;
+    margin-left:10px;
+    line-height:60px;
+}
+.nav-tabs {
+    border-bottom: none!important;
+}
 .central{
   margin: auto;
   text-align: center;
@@ -264,3 +272,51 @@ border-radius: 4px;
     color: #18384C;
 }
 
+/* Таблица календарика */
+.calendar {
+ font-size:14px;
+}
+/* Заголовок */
+.calendar th {
+  width: 117px;
+  height: 48px;
+  left: 705px;
+  top: 228px;
+  background: #F4F8F9;
+  border: 1px solid #D0E3E8;
+  box-sizing: border-box;
+  text-align:center;   
+}
+/* Ячейка дня */
+.calendar td {
+ width: 118px;
+height: 100px;
+left: 821px;
+top: 275px;
+
+background: #FFFFFF;
+border: 1px solid #D0E3E8;
+box-sizing: border-box;
+text-align:center;
+}
+/* Затемненный день */
+.calendar td.grayed {
+  background: #F0F0F0;
+  cursor: auto !important;
+}
+/* Выбранный день */
+.calendar td.selected {
+  background: #BCE6D8;
+border: 1px solid #D0E3E8;
+box-sizing: border-box;
+}
+/* Кнопки навигации */
+.calendar td.navigation {
+font-weight: 600;
+font-size: 24px;
+line-height: 24px;
+color: #18384C;        
+}
+div#calendar_table {
+    margin-top: 10px;
+}
