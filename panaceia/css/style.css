@@ -505,7 +505,7 @@ footer li{
   color: #18384C;
 }
 footer img{
-  margin-right: 3px;
+  margin-right: 0px;
 }
 .footer-block{
   background: #F4F8F9;
@@ -566,6 +566,13 @@ color: #ababab;
   height: 50px;
   background: #F4F8F9;
   border-radius: 6px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  margin: 10px 0px;
+}
+.map-list .active{
+  background:#1d9d73;
 }
 .icon{
   width: 36px;
@@ -625,4 +632,32 @@ color: #18384C;
 }
 .doctor-tab .active a{
   color: #1e9d73!important;
+}
+
+.popup-login{
+  display: none;
+}
+.time {
+    width: 70px;
+    height: 41px;
+    background: #1D9D73;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 41px;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.recording h3 {
+   font-style: normal;
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 20px;
+   color: #18384C;
+}
+.map {
+    display: none;
+    height: 200px;
+    background: #9c9c9c
 }

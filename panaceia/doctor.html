@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Panaceia</title>
-    <link rel="stylesheet" href="css/stylelk.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" >
 </head>
 
@@ -27,10 +27,10 @@
                     </div>
                     <div class="select-city">
                         <select>
-         <option>Казань</option>
-         <option>Москва</option>
-         <option>Санкт-Питербург</option>
-       </select>
+                          <option>Казань</option>
+                          <option>Москва</option>
+                          <option>Санкт-Питербург</option>
+                        </select>
                         <a href="#">Личный кабинет</a>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row popup-login">
                 <div class="col-sm">
                     <div class="search-form">
                         <div class="form-offer">
@@ -99,14 +99,14 @@
                         </li>
                     </ul>
                     <div class="map-list">
-                        <div class="list-icon icon">
+                        <div class="list-icon active icon">
                             <img src="img/list.png" alt="">
                         </div>
                         <div class="map-icon icon">
                             <img src="img/place.png" alt="">
                         </div>
                     </div>
-                    <div class="tab-content" id="myTabContent">
+                    <div class="tab-content list" id="myTabContent">
                         <div class="tab-pane fade show active" id="popular" role="tabpanel" aria-labelledby="popular-tab">
                             <div class="doctor-info">
                                 <div class="row">
@@ -124,7 +124,7 @@
                                             Личные качества
                                         </div>
                                     </div>
-                                    <div class="col-5 info-doctor">
+                                    <div class="col-4 info-doctor">
                                         <h4>Имя специалиста</h4>
                                         <h6>Специальность</h6>
                                         <h5>Врач первой категории</h5>
@@ -137,8 +137,19 @@
                                             <h5>Всего записались N кол-во</h5>
                                         </div>
                                     </div>
+                                    <div class="col-3 recording">
+                                        <h3>Выберите время приема для записи онлайн:</h3>
+                                        <div id="calendar_table_online"></div>      
+                                    </div>
+                                     <div class="col-3 recording-time">
+                                        <div class="time">9:00</div>
+                                        <div class="time">9:00</div>  
+                                        <div class="time">9:00</div>  
+                                        <div class="time">9:00</div>  
+                                        <div class="time">9:00</div>  
+                                        <div class="time">9:00</div>        
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
                         <div class="tab-pane fade" id="rating" role="tabpanel" aria-labelledby="rating-tab">...</div>
@@ -146,6 +157,11 @@
                         <div class="tab-pane fade" id="price" role="tabpanel" aria-labelledby="price-tab">...</div>
                         <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">...</div>
                     </div>
+                    <div class="tab-map-content" id="tab-map">
+                        <div class="map">
+                            
+                        </div>
+                    </div>                    
                 </div>
             </div>
         </div>
