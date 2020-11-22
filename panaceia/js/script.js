@@ -12,20 +12,6 @@ function advantageTab(evt, advantageName) {
   evt.currentTarget.className += " active";
 }
 
-function listmap(evt, advantageName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("icon");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(advantageName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
 
 //Скрипт календаря для расписания//
 
@@ -302,3 +288,24 @@ calendar.drawCalendar(
   calendar.selectedDate.Month,
   calendar.selectedDate.Year
 );
+
+
+// Табы переключения
+$(function() {
+  var tab = $('#tabs .tab-maps > .tab-map'); 
+  tab.hide().filter(':first').show(); 
+  
+  // Клики по вкладкам.
+  $('#tabs .tabs-nav .icon a').click(function(){
+    tab.hide(); 
+    tab.filter(this.hash).show(); 
+    $('#tabs .tabs-nav .icon a').removeClass('active');
+    $(this).addClass('active');
+    return false;
+  }).filter(':first').click();
+ 
+  // Клики по якорным ссылкам.
+  $('.tabs-target').click(function(){
+    $('#tabs .tabs-nav a[href=' + $(this).data('id')+ ']').click();
+  });
+});
