@@ -31,7 +31,7 @@
                             <option>Москва</option>
                             <option>Санкт-Питербург</option>
                         </select>
-                        <a href="#">Личный кабинет</a>
+                        <a href="javascript:PopUpShow()">Личный кабинет</a>
                     </div>
                 </div>
             </div>
@@ -43,15 +43,18 @@
             <div class="row">
                 <div class="col-sm">
                     <div class="text-offer">
-                        Найти нужно видео
+                        11 минут, которые сэкономят Вам часы, месяцы, а возможно и годы поиска решения вашей задачи по здоровью.
                     </div>
-                    <div class="form-video">
-                        <form class="search-form">
-                            <p class="search-video">
-                                <input type="text" name="search-video" value="Психосоматика" />
+                    <div class="form-offer">
+                        <form class="mainform">
+                            <p class="name">
+                                <input type="text" name="name" value="Имя автора" />
                             </p>
-                            <p class="found">
-                                <input type="submit" value="Найти" />
+                            <p class="email">
+                                <input type="text" name="email" value="name@example.com" />
+                            </p>
+                            <p class="send">
+                                <input type="submit" value="Отправить" />
                             </p>
                         </form>
                     </div>
@@ -105,7 +108,7 @@
                         <div class="col-9">
                             <div class="adventage-text">
                                 <a href="#">
-                                Записаться <span>на лабораторную диагностику</span></a>
+                             Записаться <span>на лабораторную диагностику</span></a>
                             </div>
                         </div>
                     </div>
@@ -499,7 +502,31 @@
             </div>
         </div>
     </footer>
-
+    <div class="popup" id="popup1">
+     <div class="popup-content content">
+        <div class="row">
+            <div class="close">
+                <a href="javascript:PopUpHide()">x</a>
+            </div>    
+            <div class="col-12">
+                <h3>Войти</h3>
+            </div>
+            <div class="col-12">
+              <input type="text" placeholder="Введите Ваш e-mail или телефон">
+              <input type="text" placeholder="Введите Ваш Пароль">
+            </div>
+            <div class="col-12 submit-login">
+                <input type="submit-login" value="Войти">
+            </div> 
+            <div class="col-12">
+             <h4>Войти с помощью аккаунта Google <a href=""><img src="img/google.png" alt=""></a></h4>
+            </div> 
+            <div class="col-12 botton-reg">
+                <a href="reg-pacient.html">Зарегистрироваться</a><a href="forgot-pacient.html">Забыли пароль?</a>
+            </div>
+        </div>
+     </div>
+    </div>
     <!--Тут скрипты-->
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>

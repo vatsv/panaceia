@@ -39,8 +39,6 @@ height: 40px;
 }
 .bodylk{
    background:#F4F8F9;
-   position: relative;
-   height: 100%;
    padding-top: 20px;
 }
 .col-md-3.sidebar {
@@ -320,3 +318,28 @@ color: #18384C;
 div#calendar_table {
     margin-top: 10px;
 }
+.exit {
+   position: absolute;
+   bottom: 10px;
+   left: 50%;
+   margin-left: -104.5px;
+   width: 210px;
+   height: 48px;
+   border: 1px solid #6D828F;
+   box-sizing: border-box;
+   border-radius: 4px;
+   text-align:center;
+   line-height:48px;
+   display:flex;
+   justify-content: space-around;
+}
+.exit a{
+color: #768A96!important;
+}
+.exit a:hover{
+color: #1D9D73!important;
+text-decoration:none;
+}
+
+
+

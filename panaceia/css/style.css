@@ -720,3 +720,106 @@ color: #18384C;
     margin-left:-90%;
     border-radius:5px;
 }
+.popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgb(162 162 162 / 50%);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.popup .popup-content{
+    margin:40px auto 0px auto;
+    width: 50%;
+    height: auto;
+    padding:50px;
+    background-color: #ffffff;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #484848;
+    text-align:center;
+}
+.popup-content input{
+  width:270px;
+  margin:10px;
+  height: 50px;
+  padding-left: 10px;
+  background: #FFFFFF;
+  border: 1px solid #D0E3E8;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.popup-content img{
+  width:50px;
+}
+.popup .close {
+    position: absolute;
+    margin-top: -55px;
+    margin-left: 46%;
+    padding: 10px;
+    border-radius: 50px;
+    z-index:99;
+}
+.submit-login input{
+    height: 50px;
+    background: #36A672;
+    border-radius: 6px;
+    width:50%;
+    text-align:center;
+    color:#fff;
+}
+.col-12.botton-reg a{
+   margin-right:15px;
+}
+.reg-page input{
+    display:block;
+    text-align:center;
+    margin: 15px auto;
+    width: 350px;
+    height: 50px;
+    padding-left: 10px;
+    background: #FFFFFF;
+    border: 1px solid #D0E3E8;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.reg-page .submit-login input{
+    height: 50px;
+    background: #36A672;
+    border-radius: 6px;
+    width:50%;
+    text-align:center;
+    color:#fff;
+}
+.reg-page {
+    text-align: center;
+}
+.reg-page h3{
+    margin-top:50px;
+}
+.reg-page input{
+    display:block;
+    text-align:center;
+    margin: 15px auto;
+    width: 50%;
+    height: 50px;
+    padding-left: 10px;
+    background: #FFFFFF;
+    border: 1px solid #D0E3E8;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+.reg-page .submit-login input{
+    height: 50px;
+    background: #36A672;
+    border-radius: 6px;
+    width:50%;
+    text-align:center;
+    color:#fff;
+}
+.reg-page h4{
+    margin-top:30px;
+}
+.reg-page img{
+    width:50px;
+}
