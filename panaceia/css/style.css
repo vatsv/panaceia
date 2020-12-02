@@ -823,3 +823,9 @@ color: #18384C;
 .reg-page img{
     width:50px;
 }
+/*Стили для страницы доктора*/
+
+.doctor-block{
+  height: auto;
+  background: #F4F8F9;
+}  

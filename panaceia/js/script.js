@@ -321,12 +321,7 @@ function PopUpShow(){
 function PopUpHide(){
     $("#popup1").hide();
 }
+
 $(document).ready(function(){
     PopUpHide();
 });
-function PopUpShow(){
-    $("#popup2").show();
-}
-function PopUpHide(){
-    $("#popup2").hide();
-}
